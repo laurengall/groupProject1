@@ -1,0 +1,10 @@
+Caden, Soop, Gavin, Bill
+
+Operations Methods: 2 double parameters for each calculator method and return one double for each. Create calculation methods for adding, subtracting, multiplying, and dividing.
+
+Square Floor Footage Method: Take int of how many rectangles make up the room, then prompt the user for length and width for however many sections the user gives. Does not work for circular rooms and assumes shapes are right-angled shapes.
+
+Total Wall Area Method: Take int number of walls, and return double—prompt the user for the length and width of every wall. 
+
+Mandate: For all user prompts, print out what the method does and explain what the inputs are that it requires for the user. Ask for each value separately in different lines, so that the user only gives one value at a time so as to not confuse our delicate users. Make sure to include an output for unwanted outputs. 
+
