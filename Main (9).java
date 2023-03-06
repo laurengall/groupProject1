@@ -1,11 +1,8 @@
 import java.util.Scanner; 
 class Main {
   public static void main(String[] args) {
-    Scanner input = new Scanner(System.in); 
-    System.out.println("How many walls are here");
-    totalWallArea(input.nextInt());
+  
   }
-
   public static double add(double a, double b){
     return a + b;
   } 
@@ -21,9 +18,9 @@ class Main {
   public static void squareFloorFootage(int recNum){
     Scanner scan = new Scanner(System.in);
     for(int i = 0; i < recNum; i++){
-      System.out.println("Input length of rectangle "+i);
+      System.out.println("Input length of rectangle "+ i);
       scan.nextDouble();
-      System.out.println("Input width of rectangle "+i);
+      System.out.println("Input width of rectangle "+ i);
       scan.nextDouble();
     }
   }
@@ -38,8 +35,7 @@ class Main {
       double w = scan.nextDouble();
       totalFootage += (l*w);
     }
-    return totalFootage;
-    
+    return totalFootage;    
   }*/
   public static double totalWallArea(int wallNum){
     Scanner input = new Scanner(System.in);
