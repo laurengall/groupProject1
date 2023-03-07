@@ -2,10 +2,15 @@ import java.util.Scanner;
 class Main {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in); 
-    mandate(); 
+   
     System.out.println("How many rectangle make up the room?");         
     int recNum = input.nextInt(); 
-    squareFloorFootage(recNum);    
+    squareFloorFootage(recNum);  
+    System.out.println("How many walls make up the room?");
+      int wallNum = input.nextInt(); 
+   
+       totalWallArea(wallNum);
+    
   }
   /* Operations Methods: 2 double parameters for each calculator method and return one double for each. Create calculation methods for adding, subtracting, multiplying, and dividing. */
   public static double add(double a, double b){
@@ -40,17 +45,19 @@ class Main {
     }
     System.out.println("The area of the given room is " + areaTotal + " square feet."); 
   } 
-  public static double totalWallArea(int wallNum){
+  public static void totalWallArea(int wallNum){
     Scanner input = new Scanner(System.in);
     double area = 0.0; 
-    for(int i = 0; i < wallNum; i++){
-      System.out.println("Input length");
+    double areaWall = 0.0; 
+    for(int i = 1; i < wallNum +1; i++){
+      System.out.println("Input length of Wall #" + i);
       double l = input.nextDouble();
-      System.out.println("Input width");
+      System.out.println("Input width of Wall #" + i);
       double w = input.nextDouble();
-      area += l * w;
+      areaWall = l * w;
+      area += areaWall; 
     }
-    return area;
+    System.out.println("The wall area in the given room is " + area + " square feet."); 
 }
   /* Mandate: For all user prompts, print out what the method does and explain what the inputs are that it requires for the user. Ask for each value separately in different lines, so that the user only gives one value at a time so as to not confuse our delicate users. Make sure to include an output for unwanted outputs. */ 
   public static void mandate(){
@@ -60,5 +67,7 @@ class Main {
     System.out.println("The mult method multiplies two ints. This method requires two ints from the user."); System.out.println(); 
     System.out.println("The div method divides two ints. This method requires two ints from the user."); System.out.println(); 
     System.out.println("The square footage methods takes an int of how many rectangles a room can be divided into. Then, for each rectangle, it takes the length and width of that rectangle, and repeats for each rectangle. The total square footage is printed at the end."); System.out.println(); 
+    System.out.println("The total wall area method takes an int of the number of walls and asks for the length and width of each wall. This method prints the total wall area."); 
+    System.out.println(); 
     }
 }
