@@ -43,7 +43,7 @@ class Main {
       areaRec = l * w; 
       areaTotal += areaRec; 
     }
-    System.out.println("The area of the given room is " + areaTotal + " square feet."); 
+    System.out.println("The square footage of the given room is " + areaTotal + " square feet."); 
   } 
   public static void totalWallArea(int wallNum){
     Scanner input = new Scanner(System.in);
@@ -61,13 +61,13 @@ class Main {
 }
   /* Mandate: For all user prompts, print out what the method does and explain what the inputs are that it requires for the user. Ask for each value separately in different lines, so that the user only gives one value at a time so as to not confuse our delicate users. Make sure to include an output for unwanted outputs. */ 
   public static void mandate(){
-    System.out.println(); 
+   /* System.out.println(); 
       System.out.println("The add method adds two ints. This method requires two ints from the user."); System.out.println(); 
     System.out.println("The sub method subtracts two ints. This method requires two ints from the user."); System.out.println();     
     System.out.println("The mult method multiplies two ints. This method requires two ints from the user."); System.out.println(); 
     System.out.println("The div method divides two ints. This method requires two ints from the user."); System.out.println(); 
     System.out.println("The square footage methods takes an int of how many rectangles a room can be divided into. Then, for each rectangle, it takes the length and width of that rectangle, and repeats for each rectangle. The total square footage is printed at the end."); System.out.println(); 
     System.out.println("The total wall area method takes an int of the number of walls and asks for the length and width of each wall. This method prints the total wall area."); 
-    System.out.println(); 
+    System.out.println(); */
     }
 }
